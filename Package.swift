@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.0
 
 import PackageDescription
 
@@ -12,8 +12,8 @@ let package = Package(
     ],
     dependencies: [
         // TODO: remove coder and java_swift dependencies
-        .package(url: "https://github.com/readdle/swift-java-coder.git", .upToNextMinor(from: "1.0.7")),
-        .package(url: "https://github.com/readdle/java_swift.git", .upToNextMinor(from: "2.1.4")),
+        .package(url: "https://github.com/kodika/swift-java-coder.git", .branch("master")),
+        .package(url: "https://github.com/kodika/java_swift.git", .branch("master")),
     ],
     targets: [
         .target(
@@ -22,5 +22,5 @@ let package = Package(
             path: "Sources"
         ),
     ],
-    swiftLanguageVersions: [5, 4]
+    swiftLanguageVersions: [.v5]
 )
