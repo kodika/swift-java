@@ -43,6 +43,7 @@ extension Set: JavaBridgeable where Element: Codable {}
 extension Date: JavaBridgeable {}
 extension Data: JavaBridgeable {}
 extension URL: JavaBridgeable {}
+extension Array: JavaBridgeable where Element == UInt8 {} //for ByteArray support
 
 extension String: JavaBridgeable {
 
